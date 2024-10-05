@@ -15,11 +15,11 @@ function getHumanChoice() {
         return humanChoice;
     } else {
         alert("Invalid choice. Please refresh the page and try again.");
-        return null; // Return null if invalid input
+        return null; 
     }
 }
 
-// Create global variables for humanScore and computerScore
+
 let humanScore = 0;
 let computerScore = 0;
 
