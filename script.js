@@ -29,3 +29,33 @@ if (humanChoice.toLowerCase() === "rock"||"cock"){
 let humanScore = 0
 let computerScore = 0
 //Initialize those variables with the value of 0.
+//game will be played round by round. write a function that takes the human and computer player choices as arguments, plays a single round, increments the round winner’s score and logs a winner announcement.
+//Create a new function named playRound.
+    function playGame() {
+        function playRound (computerChoice,humanChoice) {
+            if(computerChoice == 'rock' && humanChoice == 'scissors'){
+                console.log('Computer Wins') 
+                computerScore += 1
+            } else if(computerChoice == 'scissors' && humanChoice == 'rock'){
+                console.log('Player Wins')
+                humanScore += 1
+            }else if(computerChoice == 'paper' && humanChoice == 'rock'){
+                console.log('Computer Wins')
+                computerScore += 1   
+            }else if (computerChoice == 'paper' && humanChoice == 'scissors'){
+                console.log('Player Wins')
+                humanScore += 1
+            }else if (computerChoice == 'scissors' && humanChoice == 'paper'){
+                console.log('Computer Wins')
+                computerScore += 1 
+            }else if (computerChoice == 'rock' && humanChoice == 'paper'){
+                console.log('Computer Wins')
+                computerScore += 1
+            }else if (computerChoice == 'rock' && humanChoice == 'scissors'){
+                console.log('Player Wins')
+                humanScore += 1}
+            }
+    }
+//Write the code for your playRound function to console.log a string value representing the round winner, such as: “You lose! Paper beats Rock”.
+
+//Increment the humanScore or computerScore variable based on the round winner.
