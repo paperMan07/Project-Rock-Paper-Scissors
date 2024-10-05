@@ -14,10 +14,18 @@ else
 //Declare a function called getHumanChoice
 function getHumanChoice(){
 //Write code so that getHumanChoice will return one of the valid choices  
-let HumanChoice = prompt("poo?")
-
+let humanChoice = prompt("rock, paper,or scissors?")
+if (humanChoice.toLowerCase() === "rock"||"cock"){
+    return "rock"
+} else if (humanChoice.toLowerCase() === "paper"){
+    return "paper"
+} else if (humanChoice.toLowerCase() === "scissors"){
+    return "scissors"  
+} else if (humanChoice.toLowerCase() === "gun"){
+    return "gun"}
+ else {alert("Invalid choice. Please refresh the page to try again (I'm too lazy to change this into a while loop)");}
 }
-//Write so that getHumanChoice will return one of the valid choices
-//depeding on the user inpit
-
-prompt("poo?")
+//Create two new variables named humanScore and computerScore in the global scope.
+let humanScore = 0
+let computerScore = 0
+//Initialize those variables with the value of 0.
